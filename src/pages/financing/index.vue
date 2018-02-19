@@ -6,6 +6,7 @@
         <pic :pic="'//img12.360buyimg.com/jrpmobile/jfs/t10876/23/2566835181/40527/d7d27c08/59f97d68Ne53fda5b.png?width=1080&height=240'"></pic>        
         <select-financing></select-financing>
         <pic :pic="'//img12.360buyimg.com/jrpmobile/jfs/t7162/219/4755741/18941/4e51a5aa/597b066dNf6c7a972.jpg?width=750&height=120'"></pic>
+        <myfooter></myfooter>
     </div>
 </template>
 <script>
@@ -13,6 +14,8 @@ import Slider from "@/components/slider.vue";
 import Pic from "@/components/single_pic.vue";
 import SelectRecommend from "./select_recommend.vue";
 import SelectFinancing from "./select_financing.vue";
+import Myfooter from "@/components/footer"
+
 export default {
   data() {
     return {
@@ -36,7 +39,8 @@ export default {
     Slider,
     Pic,
     SelectRecommend,
-    SelectFinancing
+    SelectFinancing,
+    Myfooter
   }
 };
 </script>

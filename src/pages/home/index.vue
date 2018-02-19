@@ -9,6 +9,7 @@
     <recommend></recommend>
     <life></life>
     <SinglePic :pic="singleImg"></SinglePic>
+    <myfooter></myfooter>
   </div>
 </template>
 <script>
@@ -20,6 +21,7 @@ import ManageMoney from "./manage_money.vue";
 import Recommend from "./new_recommend.vue";
 import Life from "./life_service.vue";
 import SinglePic from "@/components/single_pic.vue";
+import Myfooter from "@/components/footer"
 
 export default {
   data() {
@@ -36,7 +38,8 @@ export default {
     ManageMoney,
     Recommend,
     Life,
-    SinglePic
+    SinglePic,
+    Myfooter
   }
 };
 </script>

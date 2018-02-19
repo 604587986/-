@@ -4,6 +4,7 @@
     <welfare></welfare>
     <service></service>
     <single-pic :pic="singleImg"></single-pic>
+    <myfooter></myfooter>
   </div>
 </template>
 <script>
@@ -11,6 +12,7 @@ import Slider from "@/components/slider.vue";
 import Welfare from "./welfare";
 import Service from "./more_service";
 import SinglePic from "@/components/single_pic.vue";
+import Myfooter from "@/components/footer"
 
 export default {
   data() {
@@ -33,7 +35,8 @@ export default {
     Slider,
     Welfare,
     Service,
-    SinglePic
+    SinglePic,
+    Myfooter
   }
 };
 </script>
