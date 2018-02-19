@@ -33,21 +33,25 @@ export default {
 <style lang="scss" scoped>
 @import "../../css/base.scss";
 .menu {
+  .panel {
+    margin-top: 0;
+    padding-top: 20px;
+  }
   .content {
     @include list(row);
     .item {
       min-height: 135px;
       text-align: center;
       flex: 1;
-      &:nth-child(3) .desc{
-          color: red;
+      &:nth-child(3) .desc {
+        color: red;
       }
       > img {
         width: 90px;
         height: 90px;
       }
       .desc {
-          font-size: 26px;
+        font-size: 26px;
         text-align: center;
         display: block;
         color: #666;

@@ -1,10 +1,10 @@
 const webpack = require('webpack')
 module.exports = {
+  baseUrl: './',
   devServer: {
     port: 8080,
     open: true
   },
-
   vueLoader: {
     loaders: {
       css: [{

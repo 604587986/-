@@ -1,12 +1,12 @@
 <template>
-    <div class="new-recommend">
-        <panel :title="'新品推荐'">
-            <div class="content">
-                <swiper :items="items" :options="options"></swiper>
-                <div class="more">更多尖货</div>
-            </div>
-        </panel>
-    </div>
+  <div class="new-recommend">
+    <panel :title="'新品推荐'">
+      <div class="content">
+        <swiper :items="items" :options="options"></swiper>
+      </div>
+    </panel>
+    <div class="more">更多尖货</div>
+  </div>
 </template>
 <script>
 import panel from "@/components/panel.vue";
@@ -56,22 +56,25 @@ export default {
 
 <style lang="scss" scoped>
 .new-recommend {
+  position: relative;
   .content {
-    position: relative;
-    .more {
-      max-width: 40%;
-      font-size: 28px;
-      color: #999;
-      height: 112px;
-      margin-right: 32px;
-      z-index: 99;
-      background: url(//m.jr.jd.com/spe/qyy/main/images/icon_arrow1.png) center
-        right no-repeat;
-      background-size: 18px 28px;
-      position: absolute;
-      top: -70px;
-      right: 20px;
-    }
+  }
+  .more {
+    max-width: 40%;
+    font-size: 28px;
+    color: #999;
+    height: 112px;
+    line-height: 112px;
+    padding: 0 32px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(//m.jr.jd.com/spe/qyy/main/images/icon_arrow1.png) center
+      right no-repeat;
+    background-size: 18px 28px;
   }
 }
 </style>
